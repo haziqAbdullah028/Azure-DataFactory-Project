@@ -1,0 +1,23 @@
+{
+	"name": "replaceJson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureADFProjectEndtoEnd",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "empty.json",
+				"folderPath": "empty_json",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {
+			"type": "object"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
